@@ -50,7 +50,7 @@ async function sendEmail(payload, message) {
   const { name, email, message: userMessage } = payload;
   
   const mailOptions = {
-    from: "Portfolio", 
+    from: process.env.EMAIL_ADDRESS, 
     to: process.env.EMAIL_ADDRESS, 
     subject: `New Message From ${name}`, 
     text: message, 
