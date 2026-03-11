@@ -90,28 +90,6 @@ This portfolio leverages the latest Next.js 16 and React 19 capabilities:
 
 ---
 
-## Table of Contents :scroll:
-
-- [Overview](#overview)
-- [Demo](#demo-movie_camera)
-- [Features](#features-sparkles)
-- [Sections](#sections-bookmark)
-- [Tech Stack](#tech-stack-computer)
-- [Installation](#installation-arrow_down)
-- [Getting Started](#getting-started-dart)
-- [Usage](#usage-joystick)
-- [Deployment](#deployment-rocket)
-- [Tutorials](#tutorials-wrench)
-  - [Gmail App Password Setup](#gmail-app-password-setup)
-  - [Create a Telegram Bot](#create-a-telegram-bot)
-  - [Fetching Blog from dev.to](#fetching-blog-from-devto)
-- [Packages Used](#packages-used-package)
-- [Contributing](#contributing-handshake)
-- [License](#license-page_with_curl)
-- [Support](#support-coffee)
-
----
-
 ## Tech Stack :computer:
 
 | Technology       | Version | Purpose                                   |
