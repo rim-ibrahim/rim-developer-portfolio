@@ -33,9 +33,9 @@ function Education() {
       </div>
 
       <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-start">
-            <div className="w-3/4 h-3/4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="flex justify-center items-center">
+            <div className="w-3/4">
               <AnimationLottie animationPath={lottieFile} />
             </div>
           </div>
@@ -68,6 +68,36 @@ function Education() {
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
                         </div>
+                      </div>
+                      
+                      <div className="px-3 pb-5 space-y-4">
+                        {education.coursework && (
+                          <div>
+                            <p className="text-sm font-semibold text-[#16f2b3] mb-2">Relevant Coursework</p>
+                            <p className="text-sm text-gray-400">{education.coursework}</p>
+                          </div>
+                        )}
+                        
+                        {education.focusAreas && (
+                          <div>
+                            <p className="text-sm font-semibold text-[#16f2b3] mb-2">Focus Areas</p>
+                            <p className="text-sm text-gray-400">{education.focusAreas}</p>
+                          </div>
+                        )}
+                        
+                        {education.technologies && (
+                          <div>
+                            <p className="text-sm font-semibold text-[#16f2b3] mb-2">Technologies</p>
+                            <p className="text-sm text-gray-400">{education.technologies}</p>
+                          </div>
+                        )}
+                        
+                        {education.project && (
+                          <div>
+                            <p className="text-sm font-semibold text-[#16f2b3] mb-2">Graduation Project</p>
+                            <p className="text-sm text-gray-400">{education.project}</p>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </GlowCard>

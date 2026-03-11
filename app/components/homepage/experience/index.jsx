@@ -29,9 +29,9 @@ function Experience() {
       </div>
 
       <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-start">
-            <div className="w-full h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="flex justify-center items-center">
+            <div className="w-full">
               <AnimationLottie animationPath={experience} />
             </div>
           </div>
@@ -67,6 +67,13 @@ function Experience() {
                           </p>
                         </div>
                       </div>
+                      {experience.description && (
+                        <div className="px-3 pb-5">
+                          <p className="text-sm text-gray-400 leading-relaxed">
+                            {experience.description}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </GlowCard>
                 ))

@@ -139,9 +139,12 @@ export const skillsImage = (skill) => {
     case 'tailwind':
       return tailwind;
     case 'vitejs':
+    case 'vite':
       return vitejs;
     case 'vuetifyjs':
       return vuetifyjs;
+    case 'node js':
+      return javascript;
     case 'c':
       return c;
     case 'c++':

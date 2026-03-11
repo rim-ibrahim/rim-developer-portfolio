@@ -32,41 +32,51 @@ function HeroSection() {
           </h1>
 
           <div className="my-12 flex items-center gap-5">
-            <Link
-              href={personalData.github}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsGithub size={30} />
-            </Link>
-            <Link
-              href={personalData.linkedIn}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsLinkedin size={30} />
-            </Link>
-            <Link
-              href={personalData.facebook}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaFacebook size={30} />
-            </Link>
-            <Link
-              href={personalData.leetcode}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <SiLeetcode size={30} />
-            </Link>
-            <Link
-              href={personalData.twitter}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaTwitterSquare size={30} />
-            </Link>
+            {personalData.github && (
+              <Link
+                href={personalData.github}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <BsGithub size={30} />
+              </Link>
+            )}
+            {personalData.linkedIn && (
+              <Link
+                href={personalData.linkedIn}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <BsLinkedin size={30} />
+              </Link>
+            )}
+            {personalData.facebook && (
+              <Link
+                href={personalData.facebook}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <FaFacebook size={30} />
+              </Link>
+            )}
+            {personalData.leetcode && (
+              <Link
+                href={personalData.leetcode}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <SiLeetcode size={30} />
+              </Link>
+            )}
+            {personalData.twitter && (
+              <Link
+                href={personalData.twitter}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <FaTwitterSquare size={30} />
+              </Link>
+            )}
           </div>
 
           <div className="flex items-center gap-3">
@@ -77,11 +87,15 @@ function HeroSection() {
               </button>
             </Link>
 
-            <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
+            <a 
+              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" 
+              role="button" 
+              href={personalData.resume}
+              download="Rim_Ibrahim_CV.pdf"
             >
               <span>Get Resume</span>
               <MdDownload size={16} />
-            </Link>
+            </a>
           </div>
 
         </div>
@@ -108,7 +122,7 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
+                <span className="text-amber-300">Rim Ibrahim</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
@@ -118,19 +132,17 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">NextJS</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
+                <span className="text-amber-300">Fastify</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
+                <span className="text-amber-300">Node.js</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MongoDB</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
+                <span className="text-amber-300">Strapi</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
+                <span className="text-amber-300">OpenAI</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Socket.IO</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
@@ -171,7 +183,7 @@ function HeroSection() {
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
                 <span className="mr-2 text-white">skills.length</span>
                 <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
+                <span className="text-orange-400">8</span>
               </div>
               <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
               <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
