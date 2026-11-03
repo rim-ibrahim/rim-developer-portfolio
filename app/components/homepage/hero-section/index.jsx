@@ -130,19 +130,19 @@ function HeroSection() {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
+                <span className="text-amber-300">Next.js</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Fastify</span>
+                <span className="text-amber-300">TypeScript</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Tailwind</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">React Native</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Node.js</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Strapi</span>
+                <span className="text-amber-300">Socket.IO</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">OpenAI</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Socket.IO</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

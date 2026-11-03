@@ -10,9 +10,9 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Rim Ibrahim - Full Stack Developer",
+  title: "Portfolio of Rim Ibrahim - Frontend Developer",
   description:
-    "This is the portfolio of Rim Ibrahim. I am a Full Stack Developer with hands on experience building production-grade SaaS platforms, CRM systems, AI powered web applications using React, Next.js, Node.js, Fastify, MongoDB, and cloud-based integrations.",
+    "Portfolio of Rim Ibrahim, a Dubai-based Frontend Developer with 5+ years in web development and technical support, building production React and Next.js applications with TypeScript, Tailwind CSS, React Native, and AI integrations.",
 };
 
 export default function RootLayout({ children }) {

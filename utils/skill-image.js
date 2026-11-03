@@ -113,6 +113,7 @@ export const skillsImage = (skill) => {
     case 'nuxt js':
       return nuxtJS;
     case 'react':
+    case 'react native':
       return react;
     case 'svelte':
       return svelte;
