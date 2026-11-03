@@ -29,9 +29,9 @@ function Experience() {
       </div>
 
       <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="flex justify-center items-center">
-            <div className="w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-start">
+          <div className="flex justify-center items-center lg:sticky lg:top-24">
+            <div className="w-full max-w-md">
               <AnimationLottie animationPath={experience} />
             </div>
           </div>
@@ -68,11 +68,16 @@ function Experience() {
                         </div>
                       </div>
                       {experience.description && (
-                        <div className="px-3 pb-5">
-                          <p className="text-sm text-gray-400 leading-relaxed">
-                            {experience.description}
-                          </p>
-                        </div>
+                        <ul className="px-3 pb-5 space-y-2">
+                          {experience.description
+                            .split(/\.\s+(?=[A-Z])/)
+                            .map((point, i) => (
+                              <li key={i} className="flex gap-3 text-sm text-gray-400 leading-relaxed">
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#16f2b3]" />
+                                <span>{point.endsWith('.') ? point : `${point}.`}</span>
+                              </li>
+                            ))}
+                        </ul>
                       )}
                     </div>
                   </GlowCard>
