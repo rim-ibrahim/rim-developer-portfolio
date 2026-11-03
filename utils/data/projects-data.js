@@ -31,7 +31,7 @@ export const projectsData = [
         name: 'Zainlee Technologies Website',
         description: "Developed the company's production website with an integrated AI chatbot, contact form API routes, and lead management functionality. Implemented conversion optimization features and analytics tracking via Google Tag Manager.",
         tools: ['Next JS', 'TypeScript', 'Tailwind', 'OpenAI API', 'Google Tag Manager'],
-        role: 'Frontend Developer',
+        role: 'Full Stack Developer',
         code: '',
         demo: '',
     },
