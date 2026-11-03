@@ -215,6 +215,9 @@ export const skillsImage = (skill) => {
     case 'wordpress':
       return wordpress;
     case 'azure':
+    case 'microsoft fabric':
+    case 'microsoft foundry':
+    case 'copilot studio':
       return azure;
     case 'blender':
       return blender;

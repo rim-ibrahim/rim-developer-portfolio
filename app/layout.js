@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Portfolio of Rim Ibrahim - Frontend Developer",
   description:
-    "Portfolio of Rim Ibrahim, a Dubai-based Frontend Developer with 5+ years in web development and technical support, building production React and Next.js applications with TypeScript, Tailwind CSS, React Native, and AI integrations.",
+    "Portfolio of Rim Ibrahim, a Dubai-based Frontend Developer with 5+ years in web development and technical support, building production React and Next.js applications with TypeScript, Tailwind CSS, React Native, and AI integrations, plus AI agents and copilots on Microsoft Foundry and Copilot Studio.",
 };
 
 export default function RootLayout({ children }) {

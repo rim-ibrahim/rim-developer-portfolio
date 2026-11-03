@@ -67,6 +67,9 @@ function Education() {
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
+                          {education.note && (
+                            <p className="text-xs sm:text-sm text-gray-400 mt-1">{education.note}</p>
+                          )}
                         </div>
                       </div>
                       

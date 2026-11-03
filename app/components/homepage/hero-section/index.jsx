@@ -140,7 +140,7 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Node.js</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Socket.IO</span>
+                <span className="text-amber-300">Copilot Studio</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">OpenAI</span>
                 <span className="text-gray-400">{"'],"}</span>
