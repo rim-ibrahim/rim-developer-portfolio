@@ -85,6 +85,23 @@ import fastapi from '../app/assets/svg/skills/fastapi.svg'
 
 
 
+import mantineIcon from '../app/assets/svg/skills/mantine.svg';
+import socketioIcon from '../app/assets/svg/skills/socketio.svg';
+import jwtIcon from '../app/assets/svg/skills/jwt.svg';
+import nodejsIcon from '../app/assets/svg/skills/nodejs.svg';
+import expressIcon from '../app/assets/svg/skills/express.svg';
+import postmanIcon from '../app/assets/svg/skills/postman.svg';
+import googletagmanagerIcon from '../app/assets/svg/skills/googletagmanager.svg';
+import pm2Icon from '../app/assets/svg/skills/pm2.svg';
+import responsiveIcon from '../app/assets/svg/skills/responsive.svg';
+import rtlIcon from '../app/assets/svg/skills/rtl.svg';
+import uiuxIcon from '../app/assets/svg/skills/uiux.svg';
+import restapiIcon from '../app/assets/svg/skills/restapi.svg';
+import websocketsIcon from '../app/assets/svg/skills/websockets.svg';
+import oauthIcon from '../app/assets/svg/skills/oauth.svg';
+import openaiIcon from '../app/assets/svg/skills/openai.svg';
+import acronisIcon from '../app/assets/svg/skills/acronis.svg';
+
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
@@ -145,7 +162,7 @@ export const skillsImage = (skill) => {
     case 'vuetifyjs':
       return vuetifyjs;
     case 'node js':
-      return javascript;
+      return nodejsIcon;
     case 'c':
       return c;
     case 'c++':
@@ -261,6 +278,38 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'mantine ui':
+      return mantineIcon;
+    case 'socket.io':
+      return socketioIcon;
+    case 'jwt':
+      return jwtIcon;
+    case 'express':
+      return expressIcon;
+    case 'postman':
+      return postmanIcon;
+    case 'google tag manager':
+      return googletagmanagerIcon;
+    case 'pm2':
+      return pm2Icon;
+    case 'responsive design':
+      return responsiveIcon;
+    case 'rtl interfaces':
+      return rtlIcon;
+    case 'ui/ux implementation':
+      return uiuxIcon;
+    case 'rest apis':
+      return restapiIcon;
+    case 'websockets':
+      return websocketsIcon;
+    case 'oauth2':
+      return oauthIcon;
+    case 'openai apis':
+      return openaiIcon;
+    case 'openai':
+      return openaiIcon;
+    case 'acronis':
+      return acronisIcon;
     default:
       break;
   }
